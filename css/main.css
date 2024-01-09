@@ -1,0 +1,210 @@
+body {
+  font-family: "Roboto Slab", serif;
+  background-color: #333;
+  color: #ddd;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+header {
+  background-color: #333;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  transition: all 0.3s ease-in-out;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.intro {
+  background-color: rgb(17, 17, 17);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  padding-bottom: 5%;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.discord-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 250px;
+  padding: 12px;
+  margin-top: 1%;
+  border: 4px solid #747f8d;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.discord-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://dcdn.dstn.to/banners/372343076578131968");
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  z-index: -1;
+}
+
+.discord-card:hover {
+  transform: scale(1.02);
+}
+/* 
+.avatar-container {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  z-index: 1;
+} */
+
+.profile-picture {
+  width: 100px;
+  max-width: 70%;
+  border-radius: 35%;
+}
+
+.discord-text {
+  color: antiquewhite;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.status {
+  font-size: 15px;
+  color: #888;
+}
+
+.custom-status,
+.spotify,
+.vscode {
+  font-size: 12px;
+}
+
+/* .spotify-icon,
+.vscode-icon {
+  width: 1.1em;
+  height: 1.1em;
+  margin-right: 4px;
+  vertical-align: middle;
+} */
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  opacity: 0.6;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+.sticky-header .sun {
+  position: absolute;
+  left: 0;
+  margin-left: 10%;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button {
+  text-decoration: none;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-top: 0.2%;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover{
+  transform: scale(1.06);
+}
+
+.sun:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 10px rgb(218, 170, 112));
+}
+
+main {
+  margin-top: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+.err-intro {
+  background-color: #111;
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-75%, -75%);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  max-width: 400px;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.tooltip-img {
+  position: relative;
+  display: inline-block;
+}
+
+/* img {
+  max-width: 70%;
+  border-radius: 12px;
+} */
+
+.twitter-tooltip {
+  color: #00a8e8;
+  position: relative;
+  transition: all 0.3 ease-in-out;
+}
+
+.twitter-tooltip:hover::before {
+  content: "@ken_yoru";
+  background-color: #008dc5;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.twitter-tooltip:hover::before {
+  opacity: 1;
+}
