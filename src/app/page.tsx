@@ -50,10 +50,10 @@ export default function Home() {
         </p>
 
         <div className="flex flex-wrap justify-center space-x-6 mt-8">
-          <ImageButton src={isDarkMode ? GithubWhite : GithubDark} alt="GitHub" link="#" />
-          <ImageButton src={isDarkMode ? TwitchWhite : TwitchDark} alt="Twitch" link="#" />
-          <ImageButton src={isDarkMode ? TwitterWhite : TwitterDark} alt="Twitter" link="#" />
-          <ImageButton src={isDarkMode ? YoutubeWhite : YoutubeDark} alt="YouTube" link="#" />
+          <ImageButton src={isDarkMode ? GithubWhite : GithubDark} alt="GitHub" link="https://github.com/yorunoken" />
+          <ImageButton src={isDarkMode ? TwitchWhite : TwitchDark} alt="Twitch" link="https://www.twitch.tv/yorunokenosu" />
+          <ImageButton src={isDarkMode ? TwitterWhite : TwitterDark} alt="Twitter" link="https://twitter.com/ken_yoru" />
+          <ImageButton src={isDarkMode ? YoutubeWhite : YoutubeDark} alt="YouTube" link="https://www.youtube.com/@yorunoken" />
         </div>
       </div>
     </main>
@@ -63,7 +63,7 @@ export default function Home() {
 const ImageButton = ({ src, alt, link }: ImageButtonProps) => {
   return (
     <div className="relative group mt-4">
-      <a href={link} className="relative overflow-hidden">
+      <a href={link} target="_blank" className="relative overflow-hidden">
         <Image src={src} alt={alt} width={70} height={100} className="dark-mode opacity-70 transition-all duration-300 hover:scale-110 hover:opacity-100" />
       </a>
     </div>
