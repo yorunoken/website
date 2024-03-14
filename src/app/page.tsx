@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import { useState } from "react";
 
@@ -26,30 +27,33 @@ export default function Home() {
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
 
-    const root = document.documentElement;
+    const { style } = document.documentElement;
+    // Set dark theme
     if (isDarkMode) {
-      root.style.setProperty("--foreground-rgb", "0, 0, 0");
-      root.style.setProperty("--background-start-rgb", "214, 219, 220");
-      root.style.setProperty("--background-end-rgb", "255, 255, 255");
-    } else {
-      root.style.setProperty("--foreground-rgb", "255, 255, 255");
-      root.style.setProperty("--background-start-rgb", "0, 0, 0");
-      root.style.setProperty("--background-end-rgb", "0, 0, 0");
+      style.setProperty("--foreground-rgb", "0, 0, 0");
+      style.setProperty("--background-start-rgb", "214, 219, 220");
+      style.setProperty("--background-end-rgb", "255, 255, 255");
+      return;
     }
+
+    // Set light theme
+    style.setProperty("--foreground-rgb", "255, 255, 255");
+    style.setProperty("--background-start-rgb", "0, 0, 0");
+    style.setProperty("--background-end-rgb", "0, 0, 0");
   };
 
   return (
-    <main className={centerItems + "font-mono text-lg antialiased"}>
+    <main className={centerItems + "font-mono text-lg antialiased p-8"}>
       <div className={centerItems + "text-center"}>
-        <h1 className="mb-10 text-2xl ">Hello, I&apos;m Yoru!</h1>
+        <h1 className="mb-8 text-2xl ">Hello, I&apos;m Yoru!</h1>
 
-        <p>I develop creative projects and bring interesting ideas to life.</p>
-        <p>I mostly play games on my free time and listen to music.</p>
-        <p className={`mt-6 cursor-pointer text-lg font-extrabold text-center ${isDarkMode ? "glow-white" : "glow-dark"}`} onClick={toggleDarkMode}>
+        <p className="text-sm md:text-lg">I develop creative projects and bring interesting ideas to life.</p>
+        <p className="text-sm md:text-lg">I mostly play games on my free time and listen to music.</p>
+        <p className={`cursor-pointer text-sm md:text-lg font-extrabold text-center ${isDarkMode ? "glow-white" : "glow-dark"}`} onClick={toggleDarkMode}>
           {isDarkMode ? "Let's brighten some stuff up" : "Let's tone it down a lil"}
         </p>
 
-        <div className="flex flex-wrap justify-center space-x-6 mt-8">
+        <div className="flex items-center justify-center space-x-3 mt-8 md:space-x-6  w-10/12 md:w-full">
           <ImageButton src={isDarkMode ? GithubWhite : GithubDark} alt="GitHub" link="https://github.com/yorunoken" />
           <ImageButton src={isDarkMode ? TwitchWhite : TwitchDark} alt="Twitch" link="https://www.twitch.tv/yorunokenosu" />
           <ImageButton src={isDarkMode ? TwitterWhite : TwitterDark} alt="Twitter" link="https://twitter.com/ken_yoru" />
