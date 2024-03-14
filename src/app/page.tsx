@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { Analytics } from "@vercel/analytics/react";
 
 import GithubWhite from "../images/white/github.svg";
 import TwitchWhite from "../images/white/twitch.svg";
