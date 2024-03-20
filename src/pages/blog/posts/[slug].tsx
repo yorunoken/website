@@ -42,11 +42,13 @@ export async function getStaticPaths() {
     const postsDirectory = path.join(process.cwd(), "src/pages/blog/posts");
     const posts = fs.readdirSync(postsDirectory);
 
-    const paths = posts.map((post) => ({
-        params: {
-            slug: post.replace(/\.mdx?$/, ""),
-        },
-    }));
+    const paths = posts
+        .filter((post) => post.endsWith(".mdx"))
+        .map((post) => ({
+            params: {
+                slug: post.replace(/\.mdx?$/, ""),
+            },
+        }));
 
     return {
         paths,
