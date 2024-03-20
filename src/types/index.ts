@@ -24,3 +24,7 @@ export interface Lanyard {
     }
     success: boolean
 }
+
+export interface BlogIndexProps {
+    posts: string[];
+}

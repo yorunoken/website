@@ -1,6 +1,6 @@
-import "../../app/globals.css";
+import "@/app/globals.css";
 
-const HanamiBotProject = () => {
+export default function Project() {
     const centerItems = "flex min-h-screen flex-col items-center justify-center ";
 
     return (
@@ -8,6 +8,4 @@ const HanamiBotProject = () => {
             <p>:3</p>
         </main>
     );
-};
-
-export default HanamiBotProject;
+}

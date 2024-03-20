@@ -34,8 +34,8 @@ export default function Home() {
     return (
         <main className={centerItems + "font-mono text-lg antialiased p-8 text-center"}>
             <div className="relative group mb-8 rounded-3xl overflow-hidden transition-all duration-300 hover:scale-110 hover:opacity-100">
-                <a href={`https://discord.com/users/${discordId}`} target="_blank">
-                    <Image src={discordPfp || Loading} alt="Discord PFP" width={100} height={100} className="rounded-3xl" style={{ objectFit: "cover" }} />
+                <a href={`https://discord.com/users/${discordId}`} target="_blank" rel="noopener noreferrer">
+                    <Image src={discordPfp ?? Loading} alt="Discord PFP" width={100} height={100} className="rounded-3xl" unoptimized={true} />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-60 rounded-3xl">
                         <p className="text-white text-base">{discordUsername}</p>
                     </div>
@@ -45,6 +45,9 @@ export default function Home() {
             <p className="mb-8 text-2xl">Hello, I&apos;m Yoru!</p>
             <p className="text-sm md:text-lg">I like cute things ヾ(≧▽≦*)o</p>
             <p className="text-sm md:text-lg">I mostly play games and listen to music :3c</p>
+            <Link href="/blog">
+                <p className="text-sm md:text-lg font-bold underline underline-offset-4 text-red-300">Go to blog</p>
+            </Link>
 
             <div className="mt-8">
                 <h1 className="text-xl font-bold">Socials</h1>
@@ -72,7 +75,7 @@ export default function Home() {
 const ImageButton = ({ src, alt, link }: ImageButtonProps) => {
     return (
         <div className="relative group mt-4">
-            <a href={link} target="_blank" className="relative overflow-hidden">
+            <a href={link} target="_blank" rel="noopener noreferrer" className="relative overflow-hidden">
                 <Image src={src} alt={alt} width={70} height={100} className="dark-mode opacity-70 transition-all duration-300 hover:scale-110 hover:opacity-100" />
             </a>
         </div>
