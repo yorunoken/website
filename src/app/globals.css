@@ -3,40 +3,34 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-.glow-white {
-  text-shadow: 0 0 4px #9b8888, 0 0 6px #8b758b, 0 0 8px #888868;
-}
-
-.glow-dark {
-  text-shadow: 0 0 4px #1a202c, 0 0 6px #2d3748, 0 0 8px #4a5568;
-}
-
-
-@media (prefers-color-scheme: dark) {
-  :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
-  }
+}
+
+.glow-white {
+    text-shadow: 0 0 4px #9b8888, 0 0 6px #8b758b, 0 0 8px #888868;
+}
+
+.glow-dark {
+    text-shadow: 0 0 4px #1a202c, 0 0 6px #2d3748, 0 0 8px #4a5568;
+}
+
+@media (prefers-color-scheme: white) {
+    :root {
+        --foreground-rgb: 0, 0, 0;
+        --background-start-rgb: 214, 219, 220;
+        --background-end-rgb: 255, 255, 255;
+    }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
 }
