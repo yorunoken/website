@@ -44,9 +44,10 @@ export default function Home() {
 
             <p className="mb-8 text-2xl">Hello, I&apos;m Yoru!</p>
             <p className="text-sm md:text-lg">I like cute things ヾ(≧▽≦*)o</p>
-            <p className="text-sm md:text-lg">I mostly play games and listen to music :3c</p>
+            <p className="text-sm md:text-lg">I'm a software developer specialized in TypeScript.</p>
+            <p className="text-sm md:text-lg">I mostly play games and listen to music in my free time:3c</p>
             <Link href="/blog">
-                <p className="text-sm md:text-lg font-bold underline underline-offset-4 text-red-300">Go to blog</p>
+                <p className="text-sm md:text-lg font-bold underline underline-offset-4 text-red-300">Check out my blog page!</p>
             </Link>
 
             <div className="mt-8">
