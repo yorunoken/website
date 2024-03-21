@@ -23,7 +23,7 @@ const BlogPost = ({ source }: BlogPostProps) => {
     const centerItems = "flex min-h-screen flex-col items-center justify-center ";
 
     return (
-        <main className={centerItems + "font-mono text-lg antialiased px-96 text-center border border-gray-300"}>
+        <main className={centerItems + "font-mono text-lg antialiased px-96 text-center"}>
             <div className="border-2 border-gray-300 p-8">
                 <h1 className="text-2xl font-bold mb-6">{source.frontmatter.title}</h1>
                 <MDXRemote {...source} />
