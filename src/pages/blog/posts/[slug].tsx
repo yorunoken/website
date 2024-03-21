@@ -28,10 +28,10 @@ const BlogPost = ({ source }: BlogPostProps) => {
             <MDXRemote {...source} />
             <div className="mt-8">
                 <Link href="/blog">
-                    <p className="text-blue-600 hover:underline">Go to Blog Menu</p>
+                    <p className="text-blue-600 hover:underline">Go to Blog</p>
                 </Link>
                 <Link href="/">
-                    <p className="text-blue-600 hover:underline">Go to Main Menu</p>
+                    <p className="text-blue-600 hover:underline">Go to Home</p>
                 </Link>
             </div>
         </main>

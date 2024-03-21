@@ -19,7 +19,7 @@ const BlogIndex = ({ posts }: BlogIndexProps) => {
 
     return (
         <main className={centerItems + "font-mono text-lg antialiased p-8 text-center"}>
-            <h1 className="text-2xl font-bold mb-4">All Posts</h1>
+            <h1 className="text-2xl font-bold mb-4">Posts</h1>
             <ul className="list-disc text-left">
                 {posts
                     .filter((post) => post.title)
@@ -33,7 +33,7 @@ const BlogIndex = ({ posts }: BlogIndexProps) => {
             </ul>
             <div className="mt-8">
                 <Link href="/">
-                    <p className="text-blue-600 hover:underline">Go to Main Menu</p>
+                    <p className="text-blue-600 hover:underline">Go to Home</p>
                 </Link>
             </div>
         </main>
