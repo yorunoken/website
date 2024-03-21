@@ -24,7 +24,7 @@ export default function BlogIndex({ posts }: BlogIndexProps) {
     return (
         <main className={centerItems + "font-mono text-lg antialiased p-8 text-center"}>
             <div className="mt-8">
-                <h1 className="text-2xl font-bold mb-4">Posts</h1>
+                <h1 className="text-xl sm:text-3xl font-bold mb-4">Posts</h1>
                 <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4">
                     {posts
                         .filter((post) => post.title)
@@ -59,8 +59,8 @@ export async function getStaticProps() {
 
 const BlogPostsCard = ({ title, description }: BlogPostsCardProps) => {
     return (
-        <div className="bg-dark bg-opacity-50 border border-gray-300 py-6 px-56 rounded-lg transition-all duration-300 hover:bg-opacity-100 hover:bg-neutral-900 hover:shadow-lg">
-            <h2 className="text-lg font-semibold mb-2">{title}</h2>
+        <div className="bg-dark bg-opacity-50 border border-gray-300 py-4 px-16 sm:py-6 sm:px-32 text-center transition-all duration-300 hover:bg-opacity-100 hover:bg-neutral-900 hover:shadow-lg">
+            <h2 className="text-base sm:text-lg font-semibold mb-2 sm:mb-4">{title}</h2>
             <p className="text-sm">{description}</p>
         </div>
     );
