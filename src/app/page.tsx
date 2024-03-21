@@ -35,7 +35,7 @@ export default function Home() {
         <main className={centerItems + "font-mono text-lg antialiased p-8 text-center"}>
             <div className="relative group mb-8 rounded-3xl overflow-hidden transition-all duration-300 hover:scale-110 hover:opacity-100">
                 <a href={`https://discord.com/users/${discordId}`} target="_blank" rel="noopener noreferrer">
-                    <Image src={discordPfp ?? Loading} alt="Discord PFP" width={100} height={100} className="rounded-3xl" unoptimized={true} />
+                    <Image src={discordPfp ?? Loading} alt="Discord PFP" width={150} height={150} className="rounded-3xl" unoptimized={true} />
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-60 rounded-3xl">
                         <p className="text-white text-base">{discordUsername}</p>
                     </div>
