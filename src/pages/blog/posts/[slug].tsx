@@ -23,15 +23,17 @@ const BlogPost = ({ source }: BlogPostProps) => {
     const centerItems = "flex min-h-screen flex-col items-center justify-center ";
 
     return (
-        <main className={centerItems + "font-mono text-lg antialiased p-8 text-center"}>
-            <h1 className="text-2xl font-bold mb-4">{source.frontmatter.title}</h1>
-            <MDXRemote {...source} />
+        <main className={centerItems + "font-mono text-lg antialiased px-96 text-center border border-gray-300"}>
+            <div className="border-2 border-gray-300 p-8">
+                <h1 className="text-2xl font-bold mb-6">{source.frontmatter.title}</h1>
+                <MDXRemote {...source} />
+            </div>
             <div className="mt-8">
                 <Link href="/blog">
-                    <p className="text-blue-600 hover:underline">Go to Blog</p>
+                    <p className="text-blue-600 hover:underline">Go to Blogpage</p>
                 </Link>
                 <Link href="/">
-                    <p className="text-blue-600 hover:underline">Go to Home</p>
+                    <p className="text-blue-600 hover:underline">Go to Homepage</p>
                 </Link>
             </div>
         </main>
