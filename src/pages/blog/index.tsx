@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getAllFilesFrontMatter } from "@/lib/mdx";
 
 import "@/app/globals.css";
+import { centerItems } from "@/app/constants";
 
 interface Post {
     title: string;
@@ -19,8 +20,6 @@ interface BlogIndexProps {
     posts: Post[];
 }
 export default function BlogIndex({ posts }: BlogIndexProps) {
-    const centerItems = "flex min-h-screen flex-col items-center justify-center ";
-
     return (
         <main className={centerItems + "font-mono text-lg antialiased p-8 text-center"}>
             <div className="mt-8">

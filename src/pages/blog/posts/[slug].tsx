@@ -6,6 +6,7 @@ import { MDXRemote } from "next-mdx-remote";
 import Link from "next/link";
 
 import "@/app/globals.css";
+import { centerItems } from "@/app/constants";
 
 interface FrontMatter {
     title: string;
@@ -20,10 +21,8 @@ interface BlogPostProps {
 }
 
 const BlogPost = ({ source }: BlogPostProps) => {
-    const centerItems = "flex min-h-screen flex-col items-center justify-center ";
-
     return (
-        <main className={centerItems + "font-mono text-lg antialiased px-96 text-center"}>
+        <main className={centerItems + "font-mono text-lg antialiased text-center"}>
             <div className="border-2 border-gray-300 p-8">
                 <h1 className="text-2xl font-bold mb-6">{source.frontmatter.title}</h1>
                 <MDXRemote {...source} />

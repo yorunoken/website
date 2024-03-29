@@ -11,8 +11,7 @@ import TwitterWhite from "@/images/twitter.svg";
 import YoutubeWhite from "@/images/youtube.svg";
 import Loading from "@/images/loading.svg";
 import { ImageButtonProps, Lanyard, ProjectCardProps } from "@/types";
-
-const centerItems = "flex min-h-screen flex-col items-center justify-center ";
+import { centerItems } from "@/app/constants";
 
 const discordId = "372343076578131968";
 

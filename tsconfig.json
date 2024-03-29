@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/custom.d.ts", "src/pages/blog/pages/first-posthg.mdx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/custom.d.ts", "src/pages/blog/pages/first-posthg.mdx"],
   "exclude": ["node_modules"]
 }
