@@ -119,3 +119,15 @@ main {
 .project-card .desc {
     font-size: 0.875rem;
 }
+
+.osu {
+    font-weight: bolder;
+    text-decoration: none;
+    color: pink;
+}
+
+.golang {
+    font-weight: bolder;
+    text-decoration: none;
+    color: cyan;
+}
