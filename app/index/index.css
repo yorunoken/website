@@ -24,12 +24,13 @@ main {
     transition: all 0.3s ease;
 }
 
-.introduction .big {
+.big {
     font-size: 1.5rem;
 }
 
-.introduction .small {
+.small {
     font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 .info-box {
@@ -118,6 +119,16 @@ main {
 
 .project-card .desc {
     font-size: 0.875rem;
+}
+
+.about-me {
+    border-radius: 0.5rem;
+    border: 1px solid #d2d6dc;
+    background-color: rgba(147, 154, 161, 0.05);
+    padding: 2.5rem;
+    margin-top: 2rem;
+    text-align: left;
+    transition: all 0.3s ease;
 }
 
 .osu {
