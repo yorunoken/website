@@ -1,3 +1,6 @@
+const helpArray = new Array(200000).fill("help me");
+
 window.onload = async function () {
-    console.log("hi!");
+    // edgy
+    console.log(helpArray.join(" "));
 };

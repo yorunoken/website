@@ -1,144 +1,35 @@
 main {
-    margin-top: 2%;
     flex-direction: column;
     align-items: center;
     display: flex;
     text-align: center;
-    padding: 2rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.avatar {
-    border-radius: 2rem;
-    width: 60%;
-}
-
 .introduction {
-    border-radius: 0.5rem;
-    border: 1px solid #d2d6dc;
-    background-color: rgba(147, 154, 161, 0.05);
-    padding: 2.5rem;
-    margin-top: 2rem;
-    transition: all 0.3s ease;
-}
-
-.big {
-    font-size: 1.5rem;
-}
-
-.small {
-    font-size: 1rem;
-    line-height: 1.5rem;
-}
-
-.info-box {
-    border-radius: 0.5rem;
-    border-width: 1px;
-    border-color: #d1d5db;
-    margin-top: 2rem;
-}
-
-.info-box .logo-box {
+    padding-top: 4rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    flex-direction: column;
 }
 
-.info-box .logo {
-    user-select: none;
-    opacity: 0.7;
-    transition: all 0.3s ease;
-    transform: scale(1.1);
+.introduction span {
+    font-weight: lighter;
+    font-style: italic;
+    margin: 10px;
 }
 
-.info-box .logo:hover {
-    opacity: 1;
-    transform: scale(1.2);
+.introduction .autism {
+    color: #ff8f8f;
 }
 
-.info-box .title {
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
-    padding: 0.75rem;
-    cursor: pointer;
-    user-select: none;
-}
-
-@media (min-width: 768px) {
-    .projects {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (min-width: 1024px) {
-    .projects {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-.project-card {
-    border: 1px solid #d2d6dc;
-    border-radius: 0.5rem;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    color: white;
-}
-
-@media (min-width: 640px) {
-    .project-card {
-        padding: 1.25rem;
-    }
-}
-
-.project-card:hover {
-    background-color: rgb(22, 22, 22);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.project-card .title {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-@media (min-width: 640px) {
-    .project-card .title {
-        font-size: 1.125rem;
-    }
-}
-
-.project-card .desc {
-    font-size: 0.875rem;
-}
-
-.about-me {
-    border-radius: 0.5rem;
-    border: 1px solid #d2d6dc;
-    background-color: rgba(147, 154, 161, 0.05);
-    padding: 2.5rem;
-    margin-top: 2rem;
-    text-align: left;
-    transition: all 0.3s ease;
-}
-
-.osu {
-    font-weight: bolder;
-    text-decoration: none;
-    color: pink;
-}
-
-.golang {
-    font-weight: bolder;
-    text-decoration: none;
-    color: cyan;
+.cards {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #353535; /* Set your desired background color */
+    z-index: -1; /* Ensures it's behind other content */
 }
