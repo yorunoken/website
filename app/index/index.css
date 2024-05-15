@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
@@ -9,22 +13,31 @@ header {
     height: 7vh;
     color: azure;
     position: fixed;
-    width: 100%;
-    background-color: #272727;
+    width: 20%;
+    background-color: rgba(39, 39, 39, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 2px;
+
+    transition: all 0.5s;
 }
 
 header a {
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     text-decoration: none;
     color: azure;
     background-color: #4c4c4c;
     padding: 0.6rem;
     border-radius: 5px;
-    transition: all 0.1s;
+    transition: all 0.5s;
 
     /* Define border from the get-go to not let other boxes move when hovered  */
     border: 1px solid rgba(0, 0, 0, 0);
@@ -41,12 +54,15 @@ header a:hover {
     width: 100vw;
     height: 100vh;
     color: azure;
-    background-color: #4c4c4c;
-    /* insert bg image url there. */
-    /* background-image: ""; */
+    background-image: url("https://cdn.discordapp.com/attachments/1237505304535498832/1240271824533721098/inabakumori_bg_4k_blurred.png?ex=6645f4a6&is=6644a326&hm=3a0157576f3f75d530908c8a3439f1fcb764bcd71ef4501c175de6c080199e56&");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 120%;
+    background-position-y: 0%;
 }
 
 .intro .name {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-size: 6rem;
     font-weight: bolder;
 }
@@ -54,5 +70,80 @@ header a:hover {
 .about-me {
     width: 100vw;
     height: 30vh;
-    background-color: #000000;
+    background-image: url("https://cdn.discordapp.com/attachments/1237505304535498832/1240409257304920185/flowers_blurry.png?ex=664674a4&is=66452324&hm=12f3ab56c8ef972203a5f18709b97d08c303d84999121d6fc3649355c7c5848b&");
+    box-shadow: inset rgba(255, 255, 255, 0.5) 0px 2px 2px;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row; */
+    align-items: center;
+}
+
+.about-me span {
+    padding: 25px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    color: rgb(255, 185, 185);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.about-me .title {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.projects {
+    width: 100vw;
+    height: 200vh;
+    background-color: rgba(31, 29, 50, 255);
+    box-shadow: inset rgba(255, 255, 255, 0.5) 0px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.projects .header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(255, 185, 185);
+    margin-top: 2rem;
+}
+
+.projects .header .title {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.projects .header .description {
+    margin-top: 1rem;
+}
+
+.project {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 200px;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project .title {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.project .description {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
