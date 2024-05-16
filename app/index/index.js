@@ -22,7 +22,7 @@ function handleBackgroundParallax(scrollY) {
 }
 
 function handleHeaderEnlarge(scrollY) {
-    if (scrollY > 40) {
+    if (scrollY > 150) {
         header.style.width = "100%";
         header.style.borderRadius = "0";
         header.style.backgroundColor = "rgba(39, 39, 39, 1)";

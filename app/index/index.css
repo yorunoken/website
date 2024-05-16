@@ -7,6 +7,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    background-color: #000;
 }
 
 header {
@@ -55,7 +56,7 @@ header a:hover {
     width: 100vw;
     height: 100vh;
     color: azure;
-    background-image: url("https://cdn.discordapp.com/attachments/1237505304535498832/1240271824533721098/inabakumori_bg_4k_blurred.png?ex=6645f4a6&is=6644a326&hm=3a0157576f3f75d530908c8a3439f1fcb764bcd71ef4501c175de6c080199e56&");
+    background-image: url("https://cdn.discordapp.com/attachments/1237505304535498832/1240271824533721098/inabakumori_bg_4k_blurred.png?ex=66474626&is=6645f4a6&hm=d34978ac7683a2ce3d9207dcba8ca9e76ee759366bce132ef89b43a2d976f76e&");
     background-repeat: repeat;
     background-position: center;
     background-size: 120%;
@@ -66,22 +67,25 @@ header a:hover {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-size: 6rem;
     font-weight: bolder;
+    filter: blur(1px);
 }
 
 .about-me {
     width: 100vw;
-    height: 30vh;
+    /* height: 30vh; */
     background-image: url("https://cdn.discordapp.com/attachments/1237505304535498832/1240409257304920185/flowers_blurry.png?ex=664674a4&is=66452324&hm=12f3ab56c8ef972203a5f18709b97d08c303d84999121d6fc3649355c7c5848b&");
     box-shadow: inset rgba(255, 255, 255, 0.5) 0px 2px 2px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
 }
 
 .about-me span {
     padding: 25px;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     color: rgb(255, 185, 185);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
@@ -91,10 +95,53 @@ header a:hover {
     font-size: 3rem;
 }
 
-.projects {
+.socials {
     width: 100vw;
-    height: 200vh;
-    background-color: rgba(31, 29, 50, 255);
+    /* height: 30vh; */
+    background-color: rgba(31, 29, 50, 1);
+    box-shadow: inset rgba(255, 255, 255, 0.5) 0px 2px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+.socials .github {
+    color: bisque;
+}
+
+.socials .twitter {
+    color: aquamarine;
+}
+
+.socials .youtube {
+    color: brown;
+}
+
+.socials .discord {
+    color: darkcyan;
+}
+
+.socials .description {
+    margin-left: 5vw;
+}
+
+.socials .title {
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 25px;
+    margin-right: 5vw;
+    color: rgb(255, 185, 185);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.projects {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    width: 100vw;
+    /* height: 200vh; */
+    background-color: rgba(31, 29, 50, 1);
     box-shadow: inset rgba(255, 255, 255, 0.5) 0px 2px 2px;
     display: flex;
     flex-direction: column;
@@ -107,7 +154,6 @@ header a:hover {
     flex-direction: column;
     text-align: center;
     color: rgb(255, 185, 185);
-    margin-top: 2rem;
 }
 
 .projects .header .title {
@@ -158,6 +204,7 @@ header a:hover {
 }
 
 .project .description {
+    margin-top: 0.2rem;
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
