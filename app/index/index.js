@@ -10,7 +10,7 @@ window.addEventListener("scroll", () => {
 });
 
 function handleBackgroundParallax(scrollY) {
-    let scrollPercentage = (scrollY / 500) * 100;
+    let scrollPercentage = (scrollY / 800) * 100;
 
     if (scrollPercentage < 0) {
         scrollPercentage = 0;

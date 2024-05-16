@@ -10,6 +10,7 @@ body {
 }
 
 header {
+    z-index: 999;
     height: 7vh;
     color: azure;
     position: fixed;
@@ -74,7 +75,6 @@ header a:hover {
     box-shadow: inset rgba(255, 255, 255, 0.5) 0px 2px 2px;
     display: flex;
     justify-content: center;
-    /* flex-direction: row; */
     align-items: center;
 }
 
@@ -124,16 +124,30 @@ header a:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
 
     background-size: cover;
     background-position: center;
-    width: 300px;
+    width: 600px;
     height: 200px;
 
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
+}
+
+.panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
 .project .title {
@@ -145,5 +159,16 @@ header a:hover {
 
 .project .description {
     color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.project .links {
+    margin-top: 2rem;
+}
+
+.project .links a {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: rgb(246, 181, 255);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
