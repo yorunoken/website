@@ -12,7 +12,7 @@ func Forum(w http.ResponseWriter, r *http.Request) {
 
 	username := r.FormValue("username")
 	message := r.FormValue("message")
-	ip := r.RemoteAddr
+	ip := getClientIP(r)
 
 	content := fmt.Sprintf("new form from `%s`\n```%s```\n\ndetails\n```ip: %s```", username, message, ip)
 
@@ -23,5 +23,18 @@ func Forum(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	http.Redirect(w, r, "/", http.StatusAccepted)
+	http.Redirect(w, r, "/", http.StatusPermanentRedirect)
+}
+
+func getClientIP(r *http.Request) string {
+	IPAddress := r.Header.Get("X-Real-Ip")
+
+	if IPAddress == "" {
+		IPAddress = r.Header.Get("X-Forwarded-For")
+	}
+
+	if IPAddress == "" {
+		IPAddress = r.RemoteAddr
+	}
+	return IPAddress
 }
