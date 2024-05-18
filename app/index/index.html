@@ -81,15 +81,15 @@
                 <span class="description">Get into contact with me via email (or social media, your choice!)</span>
             </div>
 
-            <form class="form" action="https://formspree.io/f/xayrkggj" method="POST">
+            <form class="form" action="/forum" method="POST">
                 <div class="section">
-                    <span class="title">Your email</span>
-                    <input placeholder="me@exaple.com" class="input" type="email" name="email" />
+                    <span class="title">Your username*</span>
+                    <input placeholder="yorunoken" class="input" type="text" name="username" required />
                 </div>
 
                 <div class="section">
-                    <span class="title">Your message</span>
-                    <textarea placeholder="I love your stuff, keep it up!" class="input" name="message"></textarea>
+                    <span class="title">Your message*</span>
+                    <textarea placeholder="I love your stuff, keep it up!" class="input" name="message" required></textarea>
                 </div>
                 <button class="send-button" type="submit">Send</button>
             </form>

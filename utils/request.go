@@ -1,6 +1,8 @@
 package utils
 
 import (
+	"bytes"
+	"encoding/json"
 	"io"
 	"net/http"
 )
@@ -32,10 +34,20 @@ func Get(url string, headers ...map[string]string) ([]byte, error) {
 	return body, nil
 }
 
-func Post(url string, payload io.Reader) ([]byte, error) {
+func Post(url string, data map[string]string) ([]byte, error) {
+	jsonData, err := json.Marshal(data)
+	if err != nil {
+		return nil, err
+	}
 
-	resp, err := http.Post(url, "application/json", payload)
+	req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonData))
+	if err != nil {
+		return nil, err
+	}
+	req.Header.Set("Content-Type", "application/json")
 
+	client := &http.Client{}
+	resp, err := client.Do(req)
 	if err != nil {
 		return nil, err
 	}
