@@ -75,7 +75,25 @@
 
         <div class="skills"></div>
 
-        <div class="contact"></div>
+        <div class="contact">
+            <div class="header">
+                <span class="title">Contact</span>
+                <span class="description">Get into contact with me via email (or social media, your choice!)</span>
+            </div>
+
+            <form class="form" action="https://formspree.io/f/xayrkggj" method="POST">
+                <div class="section">
+                    <span class="title">Your email</span>
+                    <input placeholder="me@exaple.com" class="input" type="email" name="email" />
+                </div>
+
+                <div class="section">
+                    <span class="title">Your message</span>
+                    <textarea placeholder="I love your stuff, keep it up!" class="input" name="message"></textarea>
+                </div>
+                <button class="send-button" type="submit">Send</button>
+            </form>
+        </div>
         <script src="./app/index/index.js"></script>
     </body>
 </html>

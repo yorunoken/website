@@ -72,7 +72,6 @@ header a:hover {
 
 .about-me {
     width: 100vw;
-    /* height: 30vh; */
     background-image: url("https://yorunoken.s-ul.eu/ZMhvuYoO");
     box-shadow: inset rgba(255, 255, 255, 0.5) 0px 2px 2px;
     display: flex;
@@ -97,7 +96,6 @@ header a:hover {
 
 .socials {
     width: 100vw;
-    /* height: 30vh; */
     background-color: rgba(31, 29, 50, 1);
     box-shadow: inset rgba(255, 255, 255, 0.5) 0px 2px 2px;
     display: flex;
@@ -138,11 +136,10 @@ header a:hover {
 
 .projects {
     padding-bottom: 4rem;
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
     width: 100vw;
-    /* height: 200vh; */
     background-color: rgba(31, 29, 50, 1);
-    box-shadow: inset rgba(255, 255, 255, 0.5) 0px 2px 2px;
+    /* box-shadow: inset rgba(255, 255, 255, 0.5) 0px 2px 2px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,7 +178,7 @@ header a:hover {
     position: relative;
 }
 
-.panel {
+.project .panel {
     position: absolute;
     top: 0;
     left: 0;
@@ -218,4 +215,84 @@ header a:hover {
     margin-right: 0.5rem;
     color: rgb(246, 181, 255);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.contact {
+    padding-bottom: 4rem;
+    /* padding-top: 4rem; */
+    width: 100vw;
+    background-color: rgba(31, 29, 50, 1);
+    /* box-shadow: inset rgba(255, 255, 255, 0.5) 0px 2px 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(255, 185, 185);
+}
+
+.contact .header .title {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.contact .header .description {
+    margin-top: 1rem;
+}
+
+.contact .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    background-color: rgba(255, 182, 193, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.contact .form .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.contact .form .title {
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact .form .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    max-width: 400px;
+    max-height: 200px;
+}
+
+.contact .form .send-button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact .form .send-button:hover {
+    background-color: #d34883;
 }
