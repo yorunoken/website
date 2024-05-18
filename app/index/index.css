@@ -125,13 +125,13 @@ header a:hover {
 
 .socials .description {
     margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .socials .title {
     font-weight: bold;
     font-size: 3rem;
     padding: 25px;
-    margin-right: 5vw;
     color: rgb(255, 185, 185);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
