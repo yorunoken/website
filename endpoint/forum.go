@@ -14,7 +14,7 @@ func Forum(w http.ResponseWriter, r *http.Request) {
 	message := r.FormValue("message")
 	ip := getClientIP(r)
 
-	content := fmt.Sprintf("new form from `%s`\n```%s```\n\ndetails\n```ip: %s```", username, message, ip)
+	content := fmt.Sprintf("# New form from `%s`\n```%s```\n## Details\n```ip: %s```", username, message, ip)
 
 	data := map[string]string{"content": content}
 	if _, err := utils.Post(webhookUrl, data); err != nil {
@@ -26,6 +26,8 @@ func Forum(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, "/", http.StatusPermanentRedirect)
 }
 
+// this is purely for catching naughty people who might spam my webhook.
+// no information is stored.
 func getClientIP(r *http.Request) string {
 	IPAddress := r.Header.Get("X-Real-Ip")
 
