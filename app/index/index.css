@@ -57,7 +57,6 @@ header a:hover {
     height: 100vh;
     color: azure;
     background-image: url("https://yorunoken.s-ul.eu/I7Y7HGGI");
-    /* background-repeat: repeat; */
     background-position: center;
     background-size: cover;
     background-position-y: 0%;
@@ -229,6 +228,30 @@ header a:hover {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+.skills {
+    padding-bottom: 4rem;
+    /* padding-top: 4rem; */
+    width: 100vw;
+    background-color: rgba(31, 29, 50, 1);
+    /* box-shadow: inset rgba(255, 255, 255, 0.5) 0px 2px 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills .header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(255, 185, 185);
+}
+
+.skills .header .title {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
 .contact {
     padding-bottom: 4rem;
     /* padding-top: 4rem; */
@@ -307,4 +330,25 @@ header a:hover {
 
 .contact .form .send-button:hover {
     background-color: #d34883;
+}
+
+.skills .category {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.skills .category .title {
+    color: #ff55aa;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.skills .category .materials {
+    color: #ff6d6d;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+}
+
+.skills .category .materials .bracket {
+    color: #ffffff;
 }
