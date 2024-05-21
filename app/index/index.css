@@ -349,6 +349,15 @@ header a:hover {
     margin-top: 0.2rem;
 }
 
+.skills .category .material {
+    cursor: default;
+    background-color: #4c4c4c;
+    padding: 0.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 8px;
+}
+
 .skills .category .materials .bracket {
     color: #ffffff;
 }
