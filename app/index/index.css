@@ -8,6 +8,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     background-color: #000;
+    overflow-x: hidden;
 }
 
 header {
@@ -47,6 +48,73 @@ header a {
 
 header a:hover {
     border: 1px solid white;
+}
+
+.music-player {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(39, 39, 39, 0.8);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 2px;
+    padding: 10px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.music-player span {
+    color: azure;
+}
+
+.music-player .song-title {
+    color: rgb(199, 255, 255);
+    font-weight: bolder;
+}
+
+.music-player .controller {
+    transform: scale(75%);
+    margin-left: 0.3rem;
+    cursor: pointer;
+}
+
+.music-player input[type="range"] {
+    width: 80px;
+    margin: 0 10px;
+}
+
+.music-player input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #666;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.music-player input[type="range"]::-webkit-slider-thumb {
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.music-player .close-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 50%;
+    right: 0px;
+    cursor: pointer;
+}
+
+.music-player .close-button:hover {
+    color: red;
 }
 
 .intro {
@@ -319,8 +387,8 @@ header a:hover {
 }
 
 .contact .form .send-button {
-    background-color: #ff69b4;
-    color: white;
+    background-color: #f0f0f0;
+    color: rgba(0, 0, 0, 0.6);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
