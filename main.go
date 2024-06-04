@@ -17,6 +17,8 @@ func main() {
 	}
 
 	http.HandleFunc("/", endpoint.Index)
+	http.HandleFunc("/message", endpoint.Message)
+
 	http.HandleFunc("/forum", endpoint.Forum)
 	http.HandleFunc("/playlist", endpoint.Playlist)
 
