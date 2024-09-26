@@ -1,11 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { getPostData } from "@/lib/posts";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
 type Props = {
     params: { id: string };
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const postData = await getPostData(params.id);
+
+    return {
+        title: `Blog Post | ${postData.title}`,
+        description: postData.description,
+    };
+}
 
 export default async function Post({ params }: Props) {
     const postData = await getPostData(params.id);

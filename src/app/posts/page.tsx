@@ -4,6 +4,12 @@ import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Blog Posts | Main Page",
+    description: "Check out my blog posts!",
+};
 
 export default function Posts() {
     const postsData = getSortedPostsData();
