@@ -84,6 +84,20 @@ export default function PersonalWebsite() {
             github: "https://github.com/yorunoken/fun-api",
             website: "https://fun.yorunoken.com",
         },
+        {
+            title: "Hatsune Miku GRUB",
+            description: "A Grub theme of Hatsune Miku",
+            backgroundUrl:
+                "https://raw.githubusercontent.com/yorunoken/HatsuneMiku/refs/heads/main/background.png",
+            github: "https://github.com/yorunoken/HatsuneMiku",
+        },
+        {
+            title: "dotfiles",
+            description: "My dotfiles for my Arch Linux setup.",
+            backgroundUrl:
+                "https://raw.githubusercontent.com/yorunoken/dotfiles/refs/heads/main/screenshots/2.png",
+            github: "https://github.com/yorunoken/dotfiles",
+        },
     ];
 
     const socials = [

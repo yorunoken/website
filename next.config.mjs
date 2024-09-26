@@ -4,6 +4,7 @@ const nextConfig = {
         remotePatterns: [
             { hostname: "yorunoken.s-ul.eu" },
             { hostname: "cdn.discordapp.com" },
+            { hostname: "raw.githubusercontent.com" },
         ],
     },
 };
