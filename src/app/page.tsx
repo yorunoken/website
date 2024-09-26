@@ -67,6 +67,12 @@ export default function PersonalWebsite() {
             title: "Calissaydim",
             description:
                 "A fun website to find out what universities you could've landed if you had studied instead of playing games.",
+            coAuthors: [
+                {
+                    name: "Burak",
+                    url: "https://www.linkedin.com/in/burak-tanr%C4%B1verdi-a15b88260/",
+                },
+            ],
             backgroundUrl: "https://yorunoken.s-ul.eu/lBk5GuSB",
             github: "https://github.com/yorunoken/calissaydim",
             website: "https://calissaydim.com.tr",

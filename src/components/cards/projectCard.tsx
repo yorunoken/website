@@ -12,6 +12,7 @@ export interface Project {
     title: string;
     description: string;
     backgroundUrl: string;
+    coAuthors?: Array<{ name: string; url: string }>;
     github?: string;
     website?: string;
 }
@@ -39,6 +40,25 @@ export default function ProjectCard({ project }: { project: Project }) {
                 <CardDescription className="text-gray-300 mt-2">
                     {project.description}
                 </CardDescription>
+                {project.coAuthors && project.coAuthors.length > 0 && (
+                    <div className="mt-2 text-sm text-gray-300">
+                        Co-authors:{" "}
+                        {project.coAuthors.map((author, index) => (
+                            <span key={author.url}>
+                                {index > 0 && ", "}
+                                <Link
+                                    href={author.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-purple-400 hover:text-purple-300"
+                                >
+                                    {author.name}
+                                </Link>
+                            </span>
+                        ))}
+                    </div>
+                )}
+
                 <div className="mt-4 space-x-2">
                     {project.github && (
                         <Button
