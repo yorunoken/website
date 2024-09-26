@@ -148,6 +148,16 @@ export default function PersonalWebsite() {
                                 <p className="text-lg">
                                     I hope we get along! :3
                                 </p>
+                                <div className="flex justify-center">
+                                    <Link href="/posts">
+                                        <Button
+                                            variant="outline"
+                                            className="bg-gray-800 bg-opacity-90 hover:bg-gray-700 text-purple-300 border-purple-500"
+                                        >
+                                            Read My Blogs
+                                        </Button>
+                                    </Link>
+                                </div>
                             </CardContent>
                         </Card>
                     </section>
@@ -196,10 +206,6 @@ export default function PersonalWebsite() {
                         </div>
                     </section>
                 </main>
-
-                <footer className="mt-12 text-center text-gray-400">
-                    <p>© 2024 Yoru. Way to reserving my heart is food.</p>
-                </footer>
             </div>
         </div>
     );

@@ -1,3 +1,4 @@
+import { Footer } from "@/components/footer";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
@@ -25,7 +26,8 @@ export default function RootLayout({
                     defaultTheme="dark"
                     disableTransitionOnChange
                 >
-                    {children}
+                    <main className="flex-grow mx-auto w-full">{children}</main>
+                    <Footer />
                 </ThemeProvider>
             </body>
         </html>
