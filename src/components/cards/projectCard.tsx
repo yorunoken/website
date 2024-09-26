@@ -61,27 +61,27 @@ export default function ProjectCard({ project }: { project: Project }) {
 
                 <div className="mt-4 space-x-2">
                     {project.github && (
-                        <Button
-                            size="sm"
-                            variant="secondary"
-                            className="bg-gray-700 hover:bg-gray-600 text-purple-200 border border-purple-400"
-                        >
-                            <Link href={project.github} target="_blank">
+                        <Link href={project.github} target="_blank">
+                            <Button
+                                size="sm"
+                                variant="secondary"
+                                className="bg-gray-700 hover:bg-gray-600 text-purple-200 border border-purple-400"
+                            >
                                 GitHub
-                            </Link>
-                        </Button>
+                            </Button>
+                        </Link>
                     )}
 
                     {project.website && (
-                        <Button
-                            size="sm"
-                            variant="secondary"
-                            className="bg-gray-700 hover:bg-gray-600 text-purple-200 border border-purple-400"
-                        >
-                            <Link href={project.website} target="_blank">
+                        <Link href={project.website} target="_blank">
+                            <Button
+                                size="sm"
+                                variant="secondary"
+                                className="bg-gray-700 hover:bg-gray-600 text-purple-200 border border-purple-400"
+                            >
                                 Website
-                            </Link>
-                        </Button>
+                            </Button>
+                        </Link>
                     )}
                 </div>
             </CardContent>

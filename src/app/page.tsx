@@ -155,15 +155,18 @@ export default function PersonalWebsite() {
                         </h2>
                         <div className="flex flex-wrap justify-center sm:justify-start gap-4">
                             {socials.map((social, index) => (
-                                <Button
+                                <Link
                                     key={index}
-                                    variant="outline"
-                                    className="bg-gray-800 bg-opacity-90 hover:bg-gray-700 text-purple-300 border-purple-500"
+                                    target="_blank"
+                                    href={social.href}
                                 >
-                                    <Link target="_blank" href={social.href}>
+                                    <Button
+                                        variant="outline"
+                                        className="bg-gray-800 bg-opacity-90 hover:bg-gray-700 text-purple-300 border-purple-500"
+                                    >
                                         {social.title}
-                                    </Link>
-                                </Button>
+                                    </Button>
+                                </Link>
                             ))}
                         </div>
                     </section>
