@@ -110,14 +110,6 @@ export default function PersonalWebsite() {
                     <p className="text-center text-xl text-gray-400">
                         Web Developer & Computer Science Enthusiast
                     </p>
-                    <div className="absolute top-0 right-0 -mt-4 -mr-4 hidden sm:block">
-                        <Image
-                            src="/placeholder.svg?height=100&width=100"
-                            alt="Flower Decoration"
-                            width={100}
-                            height={100}
-                        />
-                    </div>
                 </header>
 
                 <main className="space-y-12">
