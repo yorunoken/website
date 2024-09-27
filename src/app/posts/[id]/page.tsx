@@ -43,6 +43,8 @@ export default async function Post({ params }: Props) {
                             year: "numeric",
                             month: "long",
                             day: "numeric",
+                            hour: "2-digit",
+                            minute: "2-digit",
                         })}
                     </div>
                 </header>
