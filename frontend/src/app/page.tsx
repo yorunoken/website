@@ -152,9 +152,9 @@ export default function PersonalWebsite() {
                                     <Link href="/posts">
                                         <Button
                                             variant="outline"
-                                            className="bg-gray-800 bg-opacity-90 hover:bg-gray-700 text-purple-300 border-purple-500"
+                                            className="mt-2 bg-gray-800 bg-opacity-90 hover:bg-gray-700 text-purple-300 border-purple-500"
                                         >
-                                            Read My Blogs
+                                            Read My Blog Posts
                                         </Button>
                                     </Link>
                                 </div>

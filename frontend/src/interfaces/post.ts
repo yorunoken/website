@@ -7,3 +7,8 @@ export interface PostData {
     content?: string;
     contentHtml?: string;
 }
+
+export interface PostDetails {
+    id: string;
+    likers: Array<string>;
+}

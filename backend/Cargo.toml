@@ -1,0 +1,13 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dotenvy = "0.15.7"
+libsql = "0.6.0"
+reqwest = { version = "0.12.5", features = ["rustls-tls", "json"] }
+serde = { version = "1.0.206", features = ["derive"] }
+serde_json = "1.0.127"
+tokio = { version = "1.39.2", features = ["full"] }
+warp = "0.3.7"
