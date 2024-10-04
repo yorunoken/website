@@ -114,7 +114,7 @@ export default function PersonalWebsite() {
 
     return (
         <div className="min-h-screen bg-gray-900 text-gray-200 p-4 sm:p-8 relative overflow-hidden">
-            <div className="absolute inset-0 pointer-events-none opacity-20">
+            <div className="absolute inset-0 pointer-events-none opacity-10 blur-sm">
                 <Image
                     src={background}
                     alt="Floral Background"
@@ -122,8 +122,9 @@ export default function PersonalWebsite() {
                     style={{ objectFit: "cover" }}
                 />
             </div>
-            <div className="relative z-10 max-w-4xl mx-auto">
-                <header className="mb-12 relative">
+
+            <div className="relative z-99 max-w-4xl mx-auto">
+                <header className="mb-12">
                     <h1 className="text-4xl font-bold text-center mb-4 text-purple-300">
                         Yoru{"'"}s Portfolio
                     </h1>
@@ -143,21 +144,35 @@ export default function PersonalWebsite() {
                                     Hello! I{"'"}m Yoru. I love cute things and
                                     I{"'"}m studying to become a comp sci major!
                                     I mostly play games and listen to music in
-                                    my free time. ٩(◕‿◕｡)۶
+                                    my free time. ⸜(｡˃ ᵕ ˂ )⸝♡
                                 </p>
                                 <p className="text-lg">
                                     I hope we get along! :3
                                 </p>
-                                <div className="flex justify-center">
+                                <p className="text-lg">
+                                    If you would be so kind as to
+                                    <Link href="/support">
+                                        <Button
+                                            variant="outline"
+                                            className="mx-2 p-2 bg-gray-800 bg-opacity-90 hover:bg-gray-700 text-purple-300 border-purple-500"
+                                        >
+                                            Support me
+                                        </Button>
+                                    </Link>
+                                    that would make me very happy!
+                                </p>
+                                <p className="text-lg">
+                                    You can also
                                     <Link href="/posts">
                                         <Button
                                             variant="outline"
-                                            className="mt-2 bg-gray-800 bg-opacity-90 hover:bg-gray-700 text-purple-300 border-purple-500"
+                                            className="mx-2 p-2 bg-gray-800 bg-opacity-90 hover:bg-gray-700 text-purple-300 border-purple-500"
                                         >
-                                            Read My Blog Posts
+                                            Read my blog
                                         </Button>
                                     </Link>
-                                </div>
+                                    if there are people who still read blogs.
+                                </p>
                             </CardContent>
                         </Card>
                     </section>
