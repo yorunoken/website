@@ -27,8 +27,8 @@ export default function ProjectCard({ project }: { project: Project }) {
                 <Image
                     src={project.backgroundUrl}
                     alt={project.title}
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{ objectFit: "cover" }}
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-60 flex items-end p-4">
                     <CardTitle className="text-2xl text-purple-300">

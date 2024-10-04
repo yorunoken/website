@@ -118,8 +118,8 @@ export default function PersonalWebsite() {
                 <Image
                     src={background}
                     alt="Floral Background"
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{ objectFit: "cover" }}
                 />
             </div>
             <div className="relative z-10 max-w-4xl mx-auto">

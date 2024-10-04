@@ -21,8 +21,8 @@ export default function Posts() {
                 <Image
                     src={background}
                     alt="bg"
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{ objectFit: "cover" }}
                 />
             </div>
             <div className="relative z-10 max-w-4xl mx-auto">

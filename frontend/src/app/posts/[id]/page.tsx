@@ -47,8 +47,8 @@ export default async function Post({ params }: Props) {
                 <Image
                     src={background}
                     alt="Background"
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{ objectFit: "cover" }}
                 />
             </div>
             <div className="relative z-10 max-w-4xl mx-auto">
