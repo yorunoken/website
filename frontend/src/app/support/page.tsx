@@ -17,6 +17,11 @@ export default function Support() {
             href: "https://www.patreon.com/yorunoken/",
         },
         {
+            name: "Ko-Fi",
+            value: "ko-fi.com/yorunoken",
+            href: "https://ko-fi.com/yorunoken",
+        },
+        {
             name: "Monero",
             value: "4AtrMPNkZMiVoxjbhhuxRyXHCFAviEJY4euLe8fqgypL5rr1Ns6FQoT8dXbq7Nj8XJjY1nTokJkvmjG7zts1xN8QQexPAw1",
         },
