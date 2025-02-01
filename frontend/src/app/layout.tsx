@@ -17,24 +17,15 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body
-                className={cn(
-                    "min-h-screen bg-background font-sans antialiased",
-                )}
-            >
-                <ThemeProvider
-                    attribute="class"
-                    defaultTheme="dark"
-                    disableTransitionOnChange
-                >
+            <head>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5712569034604048" crossOrigin="anonymous"></script>
+            </head>
+            <body className={cn("min-h-screen bg-background font-sans antialiased")}>
+                <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
                     <main className="flex-grow mx-auto w-full">{children}</main>
                     <Footer />
                 </ThemeProvider>
-                <Script
-                    src="https://cloud.umami.is/script.js"
-                    data-website-id="76d0692e-1bef-4dcb-9b51-78f87d803f34"
-                    strategy="afterInteractive"
-                />
+                <Script src="https://cloud.umami.is/script.js" data-website-id="76d0692e-1bef-4dcb-9b51-78f87d803f34" strategy="afterInteractive" />
             </body>
         </html>
     );
